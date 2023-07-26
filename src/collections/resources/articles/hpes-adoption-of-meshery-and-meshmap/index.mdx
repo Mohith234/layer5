@@ -7,7 +7,7 @@ thumbnail: ./meshery-and-hpe.svg
 darkthumbnail: ./meshery-and-hpe.svg
 description: "HPE uses Meshery to manage SPIRE instances"
 type: Case Study
-category: Cloud Native
+category: Case Study
 tags:
   - Cloud Native, Meshery
 featured: false
@@ -16,7 +16,7 @@ resource: true
 ---
 
 import { ResourcesWrapper } from "../../Resources.style.js";
-import { HPEfacts, HPEintro } from "./hpe.style.js";
+import { HPEfacts, HPEintro, HPEbenefits } from "./hpe.style.js";
 import Blockquote from "../../../../reusecore/Blockquote";
 import { Link } from "gatsby";
 import Button from "../../../../reusecore/Button";
@@ -34,6 +34,14 @@ import Yogi from "./yogi.webp"
 <HPEintro>
 HPE's adoption of Meshery was driven by the need to simplify Kubernetes cluster management and monitoring. Meshery is an open source cloud native management tool that provides a self-service platform for designing, visualizing, deploying, testing, and operating cloud native infrastructure.
 </HPEintro>
+
+<div style={{display: "flex", justifyContent: "center", padding: "2%"}}>
+<a href="/case-study/HPE's_adoption_of_Meshery_and_Meshmap.pdf" download="HPE's_adoption_of_Meshery_and_Meshmap.pdf">
+   <Button secondary title="Download Case Study" external={true}>
+   </Button>
+</a>
+
+</div>
 
 <p>
    HPE, a leading technology company specializing in enterprise infrastructure, adopted Meshery Extension to enhance their Kubernetes deployments. HPE uses Kubernetes as a primary platform to build and deploy their containerized applications. The company has a large and complex Kubernetes environment, which requires robust networking solutions for efficient communication between services.
@@ -68,7 +76,8 @@ HPE's adoption of Meshery was driven by the need to simplify Kubernetes cluster 
 <p>
 SPIRE is a toolchain of APIs for establishing trust between software systems across a wide variety of hosting platforms. SPIRE exposes the SPIFFE Workload API, which can attest running software systems and issue SPIFFE IDs and SVIDs to them. <br/><br/>
 </p>
-<div style={{border: "1px solid #00B39F", padding: "2rem", boxShadow: "rgba(0, 179, 159, 0.2) 0px 10px 25px"}}>
+
+<HPEbenefits>
     <b>Meshery offers several benefits to HPE, including:</b>
     <br/>
     ✔️ Consistent service mesh management: HPE can now manage all their service meshes consistently, regardless of the underlying infrastructure or cloud provider.
@@ -78,7 +87,7 @@ SPIRE is a toolchain of APIs for establishing trust between software systems acr
     ✔️ Simplified testing and validation: Meshery's service mesh validation capabilities enable HPE to easily test and validate their service meshes, ensuring that they meet their performance, security, and compliance requirements.
     <br/>
     ✔️ Enhanced security: With Meshery's security features, HPE can ensure that their service meshes are secure and compliant with their organization's security policies.
-</div>
+</HPEbenefits>
 <br/>
 
 <p>
